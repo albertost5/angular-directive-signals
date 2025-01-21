@@ -12,6 +12,7 @@
     <div class="col-auto">
       <span customLabel
             [color]="color"
+            [errors]="myForm.get('name')?.errors"
       >Hello World</span>
     </div>
   </div>
