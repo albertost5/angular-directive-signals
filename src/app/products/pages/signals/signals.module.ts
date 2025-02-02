@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgIf} from '@angular/common';
 
 import { SignalsRoutingModule } from './signals-routing.module';
 import { SignalsLayoutComponent } from './layout/signals-layout/signals-layout.component';
@@ -19,7 +19,7 @@ import { SideMenuComponent } from './component/side-menu/side-menu.component';
   ],
   imports: [
     CommonModule,
-    SignalsRoutingModule
+    SignalsRoutingModule,
   ]
 })
 export class SignalsModule { }
