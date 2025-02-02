@@ -2,7 +2,8 @@ import {Directive, ElementRef, Input, OnInit} from '@angular/core';
 import {ValidationErrors} from "@angular/forms";
 
 @Directive({
-  selector: '[customLabel]'
+    selector: '[customLabel]',
+    standalone: false
 })
 export class CustomLabelDirective implements OnInit{
 

@@ -3,7 +3,8 @@ import {UsersService} from "../../services/users.service";
 import {User} from "../../interfaces/single-user-response.interface";
 
 @Component({
-  templateUrl: './user-info-page.component.html',
+    templateUrl: './user-info-page.component.html',
+    standalone: false
 })
 export class UserInfoPageComponent implements  OnInit{
   private userService = inject(UsersService);

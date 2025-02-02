@@ -2,8 +2,9 @@ import {Component, inject} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  templateUrl: './product-page.component.html',
-  styleUrls: ['./product-page.component.css']
+    templateUrl: './product-page.component.html',
+    styleUrls: ['./product-page.component.css'],
+    standalone: false
 })
 export class ProductPageComponent {
   private fb = inject(FormBuilder);

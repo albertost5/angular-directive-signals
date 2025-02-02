@@ -6,9 +6,10 @@ export interface MenuItem {
 }
 
 @Component({
-  selector: 'side-menu',
-  templateUrl: './side-menu.component.html',
-  styleUrls: ['./side-menu.component.css']
+    selector: 'side-menu',
+    templateUrl: './side-menu.component.html',
+    styleUrls: ['./side-menu.component.css'],
+    standalone: false
 })
 export class SideMenuComponent {
   public menuItems = signal<MenuItem[]>([
