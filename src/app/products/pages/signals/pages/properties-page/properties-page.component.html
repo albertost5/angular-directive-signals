@@ -1,1 +1,35 @@
-<p>properties-page works!</p>
+<h1>Properties</h1>
+<hr>
+
+<div class="row">
+  <div class="col-6">
+    <input
+      #email
+      type="text"
+      class="form-control mb-2"
+      (input)="onFieldUpdated('email', email.value)"
+      [value]="user().email"
+    >
+    <input
+      #firstName
+      type="text"
+      class="form-control mb-2"
+      (input)="onFieldUpdated('first_name', firstName.value)"
+      [value]="user().first_name"
+    >
+    <input
+      #lastName
+      type="text"
+      class="form-control mb-2"
+      (input)="onFieldUpdated('last_name', lastName.value)"
+      [value]="user().last_name"
+    >
+  </div>
+
+  <div class="col-6">
+  <!-- user data -->
+    <pre>
+			{{ user() | json }}
+		</pre>
+  </div>
+</div>
